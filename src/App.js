@@ -2,7 +2,7 @@
  * File: App.js
  * Project: refree
  * Created: Wednesday, September 6th 2023, 7:23:01 am
- * Last Modified: Friday, September 8th 2023, 5:33:53 am
+ * Last Modified: Friday, September 8th 2023, 5:52:01 am
  * Copyright © 2023 AMDE Agência
  */
 
@@ -10,6 +10,7 @@ import { Styles } from './components/GlobalStyles/Styles';
 import { Card } from './components/Card';
 import { Theme } from './components/ThemeProvider';
 import { Header } from './components/Header';
+import { Typography } from './components/Typography';
 
 function App() {
   return (
@@ -19,7 +20,21 @@ function App() {
         <h1>Header</h1>
       </Header>
       <Card>
-        <h3>ReFree</h3>
+        <Typography
+          element="h1"
+          style="h1"
+        >
+          ReFree
+        </Typography>
+        <Typography
+          element="body1"
+          style="body1"
+        >
+          Nunca é demais lembrar o peso e o significado destes problemas, uma
+          vez que a contínua expansão de nossa atividade assume importantes
+          posições no estabelecimento das condições financeiras e
+          administrativas exigidas.
+        </Typography>
       </Card>
     </Theme>
   );
