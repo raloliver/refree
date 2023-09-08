@@ -2,7 +2,7 @@
  * File: App.js
  * Project: refree
  * Created: Wednesday, September 6th 2023, 7:23:01 am
- * Last Modified: Friday, September 8th 2023, 5:52:01 am
+ * Last Modified: Friday, September 8th 2023, 6:35:06 am
  * Copyright © 2023 AMDE Agência
  */
 
@@ -27,7 +27,7 @@ function App() {
           ReFree
         </Typography>
         <Typography
-          element="body1"
+          element="body2"
           style="body1"
         >
           Nunca é demais lembrar o peso e o significado destes problemas, uma

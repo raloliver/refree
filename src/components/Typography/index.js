@@ -2,24 +2,24 @@
  * File: index.js
  * Project: refree
  * Created: Friday, September 8th 2023, 5:37:16 am
- * Last Modified: Friday, September 8th 2023, 5:53:42 am
+ * Last Modified: Friday, September 8th 2023, 6:34:54 am
  * Copyright © 2023 AMDE Agência
  */
 
 import styled from '@emotion/styled';
 
-const component = {
+const elements = {
   h1: 'h1',
   h2: 'h2',
   h3: 'h3',
   body1: 'p',
   bodyBold1: 'strong',
   body2: 'p',
-  body2Bold: 'strong',
+  bodyBold2: 'strong',
   subtitle: 'p',
 };
 
-const componentStyle = {
+const styledElement = {
   h1: `
     font-size: 40px;
     font-weight: 600;
@@ -44,7 +44,7 @@ const componentStyle = {
     font-weight: 400;
     font-size: 16px;
 `,
-  body2Bold: `
+  bodyBold2: `
     font-weight: 700;
     font-size: 16px;
 `,
@@ -55,9 +55,9 @@ const componentStyle = {
 };
 
 export const Typography = ({ element, style, children }) => {
-  const elementRef = component[element];
+  const elementRef = elements[element];
   const Component = styled[elementRef]`
-    ${componentStyle[style]}
+    ${styledElement[style]}
   `;
 
   return <Component>{children}</Component>;
